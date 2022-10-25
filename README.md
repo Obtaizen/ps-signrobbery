@@ -6,9 +6,9 @@ A unique script that gives you the ability to pick up, hold and steal signs arou
 ![Project Sloth Buttons 2](https://user-images.githubusercontent.com/91661118/170381303-087fbd96-dc8a-4048-9716-e5ad7637d3ee.png)
 
 ### Dependencies:
-* [qb-target](https://github.com/BerkieBb/qb-target)
+* [renwed-target](https://github.com/Renewed-Scripts/qb-target)
 * [ps-ui](https://github.com/Project-Sloth/ps-ui)
-* [dpemotes](https://github.com/andristum/dpemotes)
+* [dpemotes](https://github.com/TayMcKenzieNZ/dpemotes)
 
 <br>
 <br>
@@ -55,83 +55,102 @@ Then copy this snippet above and paste it at the very bottom of file as shown in
 Keep your entire resources folder with Visual Studio Code (or whichever program you use) and navigate to **dpemotes/client/AnimationList.lua**
 
 ```lua
-      ["stopsign"] = {"amb@world_human_janitor@male@base", "base", "Stop Sign", AnimationOptions =
-   {
-       Prop = "prop_sign_road_01a",
-       PropBone = 57005,
-       PropPlacement = {0.10, -1.0, 0.0, -90.0, -250.0, 0.0},
-       EmoteLoop = true,
-       EmoteMoving = true,
-   }},
-   ["walkingmansign"] = {"amb@world_human_janitor@male@base", "base", "Walking Man Sign", AnimationOptions =
-   {
-       Prop = "prop_sign_road_05a",
-       PropBone = 57005,
-       PropPlacement = {0.10, -1.0, 0.0, -90.0, -250.0, 0.0},
-       EmoteLoop = true,
-       EmoteMoving = true,
-   }},
-   ["dontblockintersectionsign"] = {"amb@world_human_janitor@male@base", "base", "Intersection Sign", AnimationOptions =
-   {
-       Prop = "prop_sign_road_03e",
-       PropBone = 57005,
-       PropPlacement = {0.10, -1.0, 0.0, -90.0, -250.0, 0.0},
-       EmoteLoop = true,
-       EmoteMoving = true,
-   }},
-   ["uturnsign"] = {"amb@world_human_janitor@male@base", "base", "U Turn Sign", AnimationOptions =
-   {
-       Prop = "prop_sign_road_03m",
-       PropBone = 57005,
-       PropPlacement = {0.10, -1.0, 0.0, -90.0, -250.0, 0.0},
-       EmoteLoop = true,
-       EmoteMoving = true,
-   }},
-   ["noparkingsign"] = {"amb@world_human_janitor@male@base", "base", "No Parking Sign", AnimationOptions =
-   {
-       Prop = "prop_sign_road_04a",
-       PropBone = 57005,
-       PropPlacement = {0.10, -1.0, 0.0, -90.0, -250.0, 0.0},
-       EmoteLoop = true,
-       EmoteMoving = true,
-   }},
-   ["leftturnsign"] = {"amb@world_human_janitor@male@base", "base", "Left Turn Sign", AnimationOptions =
-   {
-       Prop = "prop_sign_road_05e",
-       PropBone = 57005,
-       PropPlacement = {0.10, -1.0, 0.0, -90.0, -250.0, 0.0},
-       EmoteLoop = true,
-       EmoteMoving = true,
-   }},
-   ["rightturnsign"] = {"amb@world_human_janitor@male@base", "base", "Right Turn Sign", AnimationOptions =
-   {
-       Prop = "prop_sign_road_05f",
-       PropBone = 57005,
-       PropPlacement = {0.10, -1.0, 0.0, -90.0, -250.0, 0.0},
-       EmoteLoop = true,
-       EmoteMoving = true,
-   }},
-   ["notrespassingsign"] = {"amb@world_human_janitor@male@base", "base", "No Trespassing Sign", AnimationOptions =
-   {
-       Prop = "prop_sign_road_restriction_10",
-       PropBone = 57005,
-       PropPlacement = {0.10, -1.0, 0.0, -90.0, -250.0, 0.0},
-       EmoteLoop = true,
-       EmoteMoving = true,
-   }},
-   ["yieldsign"] = {"amb@world_human_janitor@male@base", "base", "Yield Sign", AnimationOptions =
-   {
-       Prop = "prop_sign_road_02a",
-       PropBone = 57005,
-       PropPlacement = {0.10, -1.0, 0.0, -90.0, -250.0, 0.0},
-       EmoteLoop = true,
-       EmoteMoving = true,
-   }},
+    ["ssign10"] = {
+    "rcmnigel1d",
+    "base_club_shoulder",
+    "Steal Walking Man ",
+    AnimationOptions = {
+            Prop = "prop_sign_road_03e",
+            PropBone = 60309,
+            PropPlacement = {
+                -0.1390,
+                -0.9870,
+                0.4300,
+                -67.3315314,
+                145.0627869,
+                -4.4318885
+            },
+            EmoteLoop = true,
+            EmoteMoving = true,
+        }
+    },
+    ["ssign11"] = {
+        "rcmnigel1d",
+        "base_club_shoulder",
+        "Steal U Turner ",
+        AnimationOptions = {
+            Prop = "prop_sign_road_03m",
+            PropBone = 60309,
+            PropPlacement = {
+                -0.1390,
+                -0.9870,
+                0.4300,
+                -67.3315314,
+                145.0627869,
+                -4.4318885
+            },
+            EmoteLoop = true,
+            EmoteMoving = true,
+        }
+    },
+    ["ssign12"] = {
+        "rcmnigel1d",
+        "base_club_shoulder",
+        "Steal Left Turn ",
+        AnimationOptions = {
+            Prop = "prop_sign_road_05e",
+            PropBone = 60309,
+            PropPlacement = {
+                -0.1390,
+                -0.9870,
+                0.4300,
+                -67.3315314,
+                145.0627869,
+                -4.4318885
+            },
+            EmoteLoop = true,
+            EmoteMoving = true,
+        }
+    },
+    ["ssign13"] = {
+        "rcmnigel1d",
+        "base_club_shoulder",
+        "Steal Right Turn ",
+        AnimationOptions = {
+            Prop = "prop_sign_road_05f",
+            PropBone = 60309,
+            PropPlacement = {
+                -0.1390,
+                -0.9870,
+                0.4300,
+                -67.3315314,
+                145.0627869,
+                -4.4318885
+            },
+            EmoteLoop = true,
+            EmoteMoving = true,
+        }
+    },
+    ["ssign14"] = {
+        "rcmnigel1d",
+        "base_club_shoulder",
+        "Steal Trespassing ",
+        AnimationOptions = {
+            Prop = "prop_sign_road_restriction_10",
+            PropBone = 60309,
+            PropPlacement = {
+                -0.1390,
+                -0.9870,
+                0.4300,
+                -67.3315314,
+                145.0627869,
+                -4.4318885
+            },
+            EmoteLoop = true,
+            EmoteMoving = true,
+        }
+    },
 ```
-
-Then copy this snippet above and paste it at the very bottom of file as shown in the GIF
-
-![Code_mGiMT4Cq6D](https://user-images.githubusercontent.com/91661118/170383828-72f8baa4-b05b-49b0-9170-bd766d04a95e.gif)
 
 <br>
 <br>
