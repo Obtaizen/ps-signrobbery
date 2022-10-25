@@ -252,7 +252,7 @@ end)
 RegisterNetEvent("qb-signrobbery:use:StopSign", function(src)
     if not holdingSign then
         holdingSign = true
-        TriggerEvent('animations:client:EmoteCommandStart', {"stopsign"})
+        TriggerEvent('animations:client:EmoteCommandStart', {"ssign"})
     else
         holdingSign = false
         TriggerEvent('animations:client:EmoteCommandStart', {"c"})
@@ -262,7 +262,7 @@ end)
 RegisterNetEvent("qb-signrobbery:use:WalkingManSign", function(src) 
     if not holdingSign then
         holdingSign = true
-        TriggerEvent('animations:client:EmoteCommandStart', {"walkingmansign"})
+        TriggerEvent('animations:client:EmoteCommandStart', {"ssign6"})
     else
         holdingSign = false
         TriggerEvent('animations:client:EmoteCommandStart', {"c"})
@@ -272,7 +272,7 @@ end)
 RegisterNetEvent("qb-signrobbery:use:DontBlockIntersectionSign", function(src)
     if not holdingSign then
         holdingSign = true
-        TriggerEvent('animations:client:EmoteCommandStart', {"dontblockintersectionsign"})
+        TriggerEvent('animations:client:EmoteCommandStart', {"ssign10"})
     else
         holdingSign = false
         TriggerEvent('animations:client:EmoteCommandStart', {"c"})
@@ -282,7 +282,7 @@ end)
 RegisterNetEvent("qb-signrobbery:use:UturnSign", function(src)
     if not holdingSign then
         holdingSign = true
-        TriggerEvent('animations:client:EmoteCommandStart', {"uturnsign"})
+        TriggerEvent('animations:client:EmoteCommandStart', {"ssign11"})
     else
         holdingSign = false
         TriggerEvent('animations:client:EmoteCommandStart', {"c"})
@@ -293,7 +293,7 @@ end)
 RegisterNetEvent("qb-signrobbery:use:NoParkingSign", function(src)
     if not holdingSign then
         holdingSign = true
-        TriggerEvent('animations:client:EmoteCommandStart', {"noparkingsign"})
+        TriggerEvent('animations:client:EmoteCommandStart', {"ssign4"})
     else
         holdingSign = false
         TriggerEvent('animations:client:EmoteCommandStart', {"c"})
@@ -304,7 +304,7 @@ end)
 RegisterNetEvent("qb-signrobbery:use:LeftTurnSign", function(src)
     if not holdingSign then
         holdingSign = true
-        TriggerEvent('animations:client:EmoteCommandStart', {"leftturnsign"})
+        TriggerEvent('animations:client:EmoteCommandStart', {"ssign12"})
     else
         holdingSign = false
         TriggerEvent('animations:client:EmoteCommandStart', {"c"})
@@ -315,7 +315,7 @@ end)
 RegisterNetEvent("qb-signrobbery:use:RightTurnSign", function(src)
     if not holdingSign then
         holdingSign = true
-        TriggerEvent('animations:client:EmoteCommandStart', {"rightturnsign"})
+        TriggerEvent('animations:client:EmoteCommandStart', {"ssign13"})
     else
         holdingSign = false
         TriggerEvent('animations:client:EmoteCommandStart', {"c"})
@@ -326,7 +326,7 @@ end)
 RegisterNetEvent("qb-signrobbery:use:NoTrespassingSign", function(src)
     if not holdingSign then
         holdingSign = true
-        TriggerEvent('animations:client:EmoteCommandStart', {"notrespassingsign"})
+        TriggerEvent('animations:client:EmoteCommandStart', {"ssign2"})
     else
         holdingSign = false
         TriggerEvent('animations:client:EmoteCommandStart', {"c"})
@@ -337,7 +337,7 @@ end)
 RegisterNetEvent("qb-signrobbery:use:YieldSign", function(src)
     if not holdingSign then
         holdingSign = true
-        TriggerEvent('animations:client:EmoteCommandStart', {"yieldsign"})
+        TriggerEvent('animations:client:EmoteCommandStart', {"ssign14"})
     else
         holdingSign = false
         TriggerEvent('animations:client:EmoteCommandStart', {"c"})
